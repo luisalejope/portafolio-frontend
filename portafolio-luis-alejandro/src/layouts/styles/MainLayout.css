@@ -1,0 +1,7 @@
+.allContent {
+    display: flex;
+    justify-content: center;
+}
+.navigationWrapper {
+    width: 1368px;
+}
