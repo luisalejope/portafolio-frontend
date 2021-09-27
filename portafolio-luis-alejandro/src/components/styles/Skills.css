@@ -1,0 +1,38 @@
+.skillsContainer {
+    position: absolute;
+    top: 500px;
+    width: 1200px;
+    height: 500px;
+    background-color: white;
+    border-radius: 16px;
+    box-shadow: 0 5px 5px 0 rgb(233 240 243 / 50%), 0 0 0 1px #e6ecf8;
+    display: grid;
+    grid-template-columns: 600px 600px;
+}
+
+.skill {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 70px 45px;
+}
+
+.skill >h3 {
+    font-weight: normal;
+    text-align: center;
+}
+
+.skill >h2 {
+    font-weight: bold;
+}
+
+
+.separator {
+    border: 1px solid #E6ECF8;
+    border-style: none none none solid
+}
+
+.iconColor {
+    color: #fe4066;
+}

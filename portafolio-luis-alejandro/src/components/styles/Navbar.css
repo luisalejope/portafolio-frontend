@@ -1,42 +1,47 @@
 .navContainer {
-    width: 100%;
-    display: flex;
-    background-color: white;
+  width: 100%;
+  display: flex;
+  background-color: white;
 }
 
 .logoNav {
-    width: 100px;
-    height: auto;
+  width: 100px;
+  height: auto;
 }
 
-.itemsContainer{
-    width: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
+.itemsContainer {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 }
 
-.leftNav{
-    display: flex;
-    align-items: center;
+.leftNav {
+  display: flex;
+  align-items: center;
 }
-.rightNav{
-    display: flex;
-    align-items: center;
-    justify-content: flex-end;
-    width: 40%;
+.rightNav {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  width: 40%;
 }
 .linkNav {
-    margin-left: 1rem;
-    font-size: large;
-    text-decoration: none;
-    color: #323232;
+  margin-left: 1rem;
+  font-size: large;
+  text-decoration: none;
+  color: #323232;
 }
+
+.linkNav:hover {
+    color: #fe4066;
+}
+
 a.active {
-    color: #FE4066
+  color: #fe4066;
 }
 
 p {
-    margin-top: 0 !important;
-    margin-bottom: 0 !important;
+  margin-top: 0 !important;
+  margin-bottom: 0 !important;
 }

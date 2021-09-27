@@ -1,20 +1,94 @@
-.homeContainer{
-    display: flex;
-    flex-direction: column;
-    width: 100%;
+.homeContainer {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
 }
 
-.firstContainer{
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
-    align-items: center;
-    margin: 3rem;
-    height: 461px;
+.firstContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  margin: 3rem;
+  height: 461px;
 }
 
-.profilePhoto{
-    width: 15rem;
-    height: auto;
-    border-radius: 50%;
+.secondContainer {
+  position: absolute;
+  left: 0;
+  top: 640px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 600px;
+  background-color: #e3e3e3;
+}
+
+
+.secondContainer > .presentationContainer > .thought > h3 {
+  font-weight: normal;
+  text-align: center;
+  line-height: 2rem;
+  color: white;
+}
+
+.presentationContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.firstContainer > h1 > mark {
+  background-color: transparent;
+}
+
+.firstContainer > h1 > mark:hover {
+  color: #fe4066;
+}
+
+.profilePhoto {
+  width: 15rem;
+  height: auto;
+  border-radius: 50%;
+}
+
+.thought {
+  display: flex;
+  background-color: #323232;
+  padding: 20px;
+  border-radius: 30px;
+  min-width: 40px;
+  max-width: 600px;
+  min-height: 40px;
+  margin: 20px;
+  margin-right: 50px;
+  position: relative;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+.thought:before,
+.thought:after {
+  content: "";
+  background-color: #323232;
+  border-radius: 50%;
+  display: block;
+  position: absolute;
+  z-index: -1;
+}
+.thought:before {
+  width: 44px;
+  height: 44px;
+  top: -12px;
+  left: 28px;
+  box-shadow: -50px 30px 0 -12px #323232;
+}
+.thought:after {
+  bottom: -10px;
+  right: 26px;
+  width: 30px;
+  height: 30px;
+  box-shadow: 40px -34px 0 0 #323232, -28px -6px 0 -2px #323232,
+    -24px 17px 0 -6px #323232, -5px 25px 0 -10px #323232;
 }
