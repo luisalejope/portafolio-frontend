@@ -4,6 +4,7 @@ import profileImg from "../assets/hotdog.jpg";
 import "animate.css";
 import { ReactComponent as MineSvg } from "../assets/mineGee.svg";
 import { Skills } from "../components/Skills";
+
 export const Home = () => {
   return (
     <div className="homeContainer">
@@ -35,8 +36,10 @@ export const Home = () => {
           </div>
           <MineSvg className="animate__animated animate__backInRight" />
         </div>
-        <Skills/>
+        <Skills />
       </div>
+
+      
     </div>
   );
 };

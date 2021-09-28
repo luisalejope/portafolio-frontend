@@ -14,16 +14,13 @@
 }
 
 .secondContainer {
-  position: absolute;
-  left: 0;
-  top: 640px;
-  width: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 600px;
-  background-color: #e3e3e3;
+  height: 1499px;
 }
+
+
 
 
 .secondContainer > .presentationContainer > .thought > h3 {
@@ -33,10 +30,22 @@
   color: white;
 }
 
+.lastContainer {
+  position: absolute;
+  top: 2240px;
+}
+
+
 .presentationContainer {
+  position: absolute;
+  left: 0;
+  top: 640px;
+  width: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
+  height: 600px;
+  background-color: #e3e3e3;
 }
 
 .firstContainer > h1 > mark {
