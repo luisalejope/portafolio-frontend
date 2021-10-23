@@ -2,10 +2,30 @@
     width: 100%;
     display: flex;
     flex-direction: column;
+    justify-content: space-between;
+}
+
+.allContentContact {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+}
+
+.mineGeeContainer{
+    width: 30%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.inputBorder {
+    border-color: #fe4066 !important
+}
+
+.sendButton{
+    background-color: #fe4066 !important;
 }
 
 .checkBoxActive {
-    
         color: #fe4066;
-   
 }
