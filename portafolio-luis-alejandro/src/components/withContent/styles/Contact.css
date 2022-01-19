@@ -6,9 +6,20 @@
 }
 
 .allContentContact {
-    display: flex;
     width: 100%;
-    justify-content: space-between;
+    max-width: 1200px;
+}
+
+.contactContainer{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    align-items: center;
+
+}
+
+.contactContainer > h3{
+    font-size: 2rem;
 }
 
 .mineGeeContainer{
@@ -22,8 +33,20 @@
     border-color: #fe4066 !important
 }
 
+.marginTop{
+    margin-top: 1rem;
+}
+
 .sendButton{
+    max-width: 200px;
+    width: 100%;
+    height: 3rem;
     background-color: #fe4066 !important;
+}
+
+.buttonContainer{
+    display: flex;
+    justify-content: flex-end;
 }
 
 .checkBoxActive {

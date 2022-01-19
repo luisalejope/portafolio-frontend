@@ -40,14 +40,14 @@ export const Navbar = () => {
           >
             Projects
           </NavLink>
-          <NavLink
+          {/* <NavLink
             activeClassName="active"
             className="linkNav" 
             exact
             to="/contact"
           >
             Contact
-          </NavLink>
+          </NavLink> */}
         
       </div>
     </nav>

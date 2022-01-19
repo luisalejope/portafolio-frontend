@@ -15,9 +15,9 @@ import {
   Button,
 } from "@mui/material";
 import "./styles/Contact.css";
-import { useForm } from "../hooks/useForm";
-import { ReactComponent as MineSvgThumb } from "../assets/mineGeeThumb.svg";
-import { ReactComponent as Separator } from "../assets/separator.svg";
+import { useForm } from "../../hooks/useForm";
+import { ReactComponent as MineSvgThumb } from "../../assets/mineGeeThumb.svg";
+// import { ReactComponent as Separator } from "../assets/separator.svg";
 
 export const Contact = () => {
   const userId = process.env.REACT_APP_USER_ID;
@@ -87,8 +87,8 @@ export const Contact = () => {
   };
 
   return (
-    <div>
-      <h1>Contact</h1>
+    <div className="contactContainer">
+      <h3>Contact</h3>
       <div className="allContentContact">
         <form className="formContainer" onSubmit={submitForm}>
           <OutlinedInput
@@ -97,19 +97,21 @@ export const Contact = () => {
             value={values.name}
             onChange={handleInputChange}
             placeholder="Name"
-            className="inputBorder"
+            className="inputBorder marginTop"
             startAdornment={
               <InputAdornment position="start">
                 <PersonOutlineOutlinedIcon />
               </InputAdornment>
             }
           />
+
           <OutlinedInput
             type="email"
             placeholder="Email"
             name="email"
             value={values.email}
             onChange={handleInputChange}
+            className="inputBorder marginTop"
             id="input-with-icon-adornment"
             startAdornment={
               <InputAdornment position="start">
@@ -139,26 +141,28 @@ export const Contact = () => {
             name="message"
             value={values.message}
             onChange={handleInputChange}
+            className="inputBorder marginTop"
             placeholder="Message"
             id="input-with-icon-adornment"
             maxRows={6}
             minRows={4}
             multiline
           />
-          <Button
-            className="sendButton"
-            variant="contained"
-            endIcon={<SendIcon />}
-            type="submit"
-          >
-            Send
-          </Button>
+          <div className="buttonContainer marginTop">
+            <Button
+              className="sendButton"
+              variant="contained"
+              endIcon={<SendIcon />}
+              type="submit"
+            >
+              Send
+            </Button>
+          </div>
         </form>
-        <div className="mineGeeContainer">
-          <MineSvgThumb className="animate__animated animate__backInRight" />
-        </div>
       </div>
-      {/* <Separator className="animate__animated animate__backInRight" /> */}
+      <div className="mineGeeContainer">
+        <MineSvgThumb className="animate__animated animate__backInRight" />
+      </div>
     </div>
   );
 };
