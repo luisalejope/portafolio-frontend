@@ -74,6 +74,8 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/t
 ### To do
 
 - estoy trabajando en el navbar
+- estpy trabajando en el responsive
 - revisar responsive del navbar
-- hacer icono pequeño. solo la piña
+- quitar absolutes
+
 

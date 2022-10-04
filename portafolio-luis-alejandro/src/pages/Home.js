@@ -20,10 +20,9 @@ export const Home = () => {
         <h2>Front-end developer</h2>
         <img className="profilePhoto" src={profileImg} alt="profilePhoto" />
       </div>
-
-      <div className="secondContainer">
+      
         <SkillsPPt />
-      </div>
+      
         <Contact />
 
       

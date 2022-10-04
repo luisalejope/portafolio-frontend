@@ -4,6 +4,7 @@ import DesignServicesOutlinedIcon from "@mui/icons-material/DesignServicesOutlin
 import CodeOutlinedIcon from "@mui/icons-material/CodeOutlined";
 export const Skills = () => {
   return (
+    <>
     <div className="skillsContainer">
       <div className="skill">
         <DesignServicesOutlinedIcon
@@ -57,5 +58,9 @@ export const Skills = () => {
         </div>
       </div>
     </div>
+
+    
+    
+    </>
   );
 };

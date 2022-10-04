@@ -1,21 +1,22 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import { Link, NavLink } from "react-router-dom";
 import "./styles/Navbar.css";
-import logo from "../assets/logoPortafolio1.png";
+import desktopLogo from "../assets/logoPortafolio1.png";
+import mobileLogo from "../assets/logoSimpleSinFondo.png";
 import useWindowDimensions from "../hooks/useWindowDimensions";
 
 export const Navbar = () => {
 
   const { height, width } = useWindowDimensions();
   const [path, setPath] = useState(window.location.pathname);
-
+ 
   const DesktopNav = () => {
     return (
       <nav className="navContainer">
         <div className="itemsContainer">
           <div className="leftNav">
             <Link to="/">
-              <img className="logoNav" src={logo} alt="logo" />
+              <img className="logoNav" src={desktopLogo} alt="desktopLogo" />
             </Link>
           </div>
         </div>
@@ -84,7 +85,7 @@ export const Navbar = () => {
               >
                 Home
               </NavLink>
-              {path === '/' && <img className="logoNav" src={logo} alt="logo" />}
+              {path === '/' && <img className="logoNav" src={mobileLogo} alt="desktopLogo" />}
             </div>
             <div className="containerLink">
               <NavLink
@@ -96,7 +97,7 @@ export const Navbar = () => {
               >
                 My Work
               </NavLink>
-              {path === '/my-work' && <img className="logoNav" src={logo} alt="logo" />}
+              {path === '/my-work' && <img className="logoNav" src={mobileLogo} alt="desktopLogo" />}
             </div>
             <div className="containerLink">
               <NavLink
@@ -108,7 +109,7 @@ export const Navbar = () => {
               >
                 Projects
               </NavLink>
-              {path === '/projects' && <img className="logoNav" src={logo} alt="logo" />}
+              {path === '/projects' && <img className="logoNav" src={mobileLogo} alt="desktopLogo" />}
             </div>
 
           </div>

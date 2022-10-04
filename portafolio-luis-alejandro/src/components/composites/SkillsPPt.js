@@ -19,7 +19,7 @@ export const SkillsPPt = () => {
             you.
           </h3>
         </div>
-        <MineSvg className="animate__animated animate__backInRight" />
+        <MineSvg className="mineSvgMobile animate__animated animate__backInRight" />
       </div>
       <Skills />
     </div>
