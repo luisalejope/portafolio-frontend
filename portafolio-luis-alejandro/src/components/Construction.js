@@ -5,7 +5,7 @@ export const Construction = () => {
   return (
     <>
       <div className="constructionContainer">
-        <img src={constructionImg} alt="construction" />
+        <img className="constructionImage" src={constructionImg} alt="construction" />
       </div>
     </>
   );

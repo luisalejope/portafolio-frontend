@@ -3,3 +3,17 @@
     display: flex;
     justify-content: center;
 }
+
+.constructionImage {
+    width: 50%;
+    height: auto;
+}
+
+@media (max-width: 844px) { 
+
+    .constructionImage {
+        width: 100%;
+        height: auto;
+    }
+
+}
