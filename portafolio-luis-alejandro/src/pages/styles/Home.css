@@ -19,6 +19,10 @@
   top: 2240px;
 }
 
+.firstContainer > h2 {
+  text-align: center;
+}
+
 .firstContainer > h1 > mark {
   background-color: transparent;
 }

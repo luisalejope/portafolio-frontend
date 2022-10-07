@@ -48,27 +48,18 @@ export const Navbar = () => {
           >
             Projects
           </NavLink>
-          {/* <NavLink
-            activeClassName="active"
-            className="linkNav" 
-            exact
-            to="/contact"
-          >
-            Contact
-          </NavLink> */}
-
         </div>
       </nav>
     )
   }
   const MobileNav = () => {
     return (
-      <nav role="navigation">
+      <nav className="navContainer">
         <div className="menuToggle">
 
           <input type="checkbox" />
 
-
+          
           <span></span>
           <span></span>
           <span></span>
@@ -111,7 +102,6 @@ export const Navbar = () => {
               </NavLink>
               {path === '/projects' && <img className="logoNav" src={mobileLogo} alt="desktopLogo" />}
             </div>
-
           </div>
         </div>
       </nav>

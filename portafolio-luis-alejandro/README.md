@@ -73,9 +73,10 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/t
 
 ### To do
 
-- estoy trabajando en el navbar
 - estpy trabajando en el responsive
-- revisar responsive del navbar
-- quitar absolutes
+- revisar las skills en responsive
+- cambiar estilos del thought en responsive
+- revisar responsive del navbar, la x se sigue moviendo
+
 
 
