@@ -188,6 +188,10 @@ p {
   overflow-y: hidden;
 }
 
+/* .menuToggle input:checked ~ span
+{
+  position: fixed;
+} */
 
 
 .containerLink {

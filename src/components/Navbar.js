@@ -110,7 +110,6 @@ export const Navbar = () => {
   return (
     <>
       {width >= '844' ? <DesktopNav /> : <MobileNav />}
-      {width}
     </>
   );
 };

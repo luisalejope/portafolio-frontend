@@ -1,13 +1,22 @@
 import React from 'react'
-import { Construction } from '../components/Construction'
+import { Caroussel } from '../components/withContent/Caroussel';
+import "./styles/MyWork.css";
+
 
 export const MyWork = () => {
     return (
-        <div>
-            <br />
-            <br />
-            <h1>MyWork</h1>
-            <Construction />
-        </div>
+        <div className="myWorkContainer">
+      <div className="myWorkFirst">
+        <h1>
+          <mark>Hello</mark>
+        </h1>
+        <h2>You can find a taste of my work</h2>
+      </div>
+
+      <Caroussel />
+      
+
+      
+    </div>
     )
 }

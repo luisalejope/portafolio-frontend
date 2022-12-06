@@ -73,10 +73,9 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/t
 
 ### To do
 
-- estpy trabajando en el responsive
-- revisar las skills en responsive
-- cambiar estilos del thought en responsive
 - revisar responsive del navbar, la x se sigue moviendo
+- hacer las secciones de my work y projects (ver cuaderno rojo de la javeriana)
+- navbar no sirve en my work en responsive
 
 
 
