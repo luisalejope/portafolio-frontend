@@ -4,19 +4,20 @@ import "./styles/MyWork.css";
 
 
 export const MyWork = () => {
-    return (
-        <div className="myWorkContainer">
+  return (
+    <div className="myWorkContainer">
       <div className="myWorkFirst">
         <h1>
           <mark>Hello</mark>
         </h1>
         <h2>You can find a taste of my work</h2>
       </div>
+      <div className='content-container-mywork'>
+        <Caroussel />
+      </div>
 
-      <Caroussel />
-      
 
-      
+
     </div>
-    )
+  )
 }

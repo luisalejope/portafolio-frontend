@@ -1,77 +1,46 @@
-.crosssell-cards-container {
-    width: 100%;
-    overflow: hidden;
-    padding-bottom: 30px;
-}
-.crosssell-cards {
-    width: 100%;
-    animation: crosssellSlider 10s linear infinite;
-    will-change: transform;
+
+@keyframes scroll {
+	0% { transform: translateX(0); }
+	100% { transform: translateX(calc(-250px * 7))}
 }
 
-.crosssell-cards:hover {
-    animation-play-state: paused
+.slider {
+	background: white;
+	box-shadow: 0 10px 20px -5px rgba(0, 0, 0, .125);
+	height: 400px;
+	margin: auto;
+	overflow:hidden;
+	position: absolute;
+	width: 100%;
+	
+	
 }
-
-.crosssell-card{
-    width: 400px;
-    height: 230px;
-    position: relative;
-    float: left;
-    margin: 0 15px;
-    transition: transform .3s ease-out;
-    z-index: 1;
-    outline: none;
-    display: flex;
-    justify-content: flex-end;
-    text-decoration: none;
-
-    
-}
-
-
-.crosssell-card:before{
-    content: '';
-    display: block;
+.slider::before,
+.slider::after {
+    content: "";
+    height: 100px;
     position: absolute;
-    left: 10px;
-    right: 10px;
-    top: 0;
-    bottom: 0;
-    box-shadow: 0px 8px 20px 0px rgba(0,0,0,0.3);
+    width: 200px;
+    z-index: 2;
 }
 
-.crosssell-card:hover{
-    transform: translate3d(0, -20px, 0);
-}
-
-.crosssell-card > .bg-img{
-    max-width: none;
-    position: absolute;
-    bottom: 0;
+.slider::after {
     right: 0;
-}
-.crosssell-card >.text{
-    align-self: center;
-    position: relative;
-    z-index: 1;
-    color: #fff;
-    font-size: 20px;
-    text-align: right;
-    padding-right: 35px;
-
-    
+    top: 0;
+    transform: rotateZ(180deg);
 }
 
-.text > h2 {
-    font-size: 45px;
-    color: #fff;
-    text-align: right;
-    margin-bottom: 5px;
+.slider::before {
+    left: 0;
+    top: 0;
+}
+.slide-track {
+    animation: scroll 40s linear infinite;
+    display: flex;
+    width: calc(250px * 14);
 }
 
-/* Make it move */
-@keyframes crosssellSlider {
-0% { transform: translate3d(100%, 0, 0)}
-100% {transform: translate3d(-100%, 0, 0) }
+.slide {
+    height: 100px;
+    width: 250px;
 }

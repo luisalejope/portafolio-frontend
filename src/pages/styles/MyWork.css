@@ -3,9 +3,16 @@
     flex-direction: column;
     width: 100%;
 }
-.myWorkContainer > .myWorkFirst {
+
+.myWorkContainer>.myWorkFirst {
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
     align-items: center;
-  }
+}
+
+.myWorkContainer>.content-container-mywork {
+    position: relative;
+    height: 400px;
+    background-color: white;
+}
