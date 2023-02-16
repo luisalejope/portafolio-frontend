@@ -4,10 +4,12 @@ import { BrowserRouter as Router } from "react-router-dom";
 import { MainRoutes } from "./routes/MainRoutes";
 import './styles/typography.css'
 import './styles/MainApp.css'
-export const MainApp = () => {
+function MainApp() {
   return (
     <Router>
       <MainRoutes />
     </Router>
   );
 };
+
+export default MainApp

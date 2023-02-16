@@ -1,7 +1,7 @@
 import React from "react";
 import { Skills } from "../withContent/Skills";
 import "./styles/SkillsPPt.css";
-import { ReactComponent as MineSvg } from "../../assets/mineGee.svg";
+import  MineGeeThumb from "../svg/MineGeeThumb";
 import "animate.css";
 export const SkillsPPt = () => {
   return (
@@ -19,7 +19,7 @@ export const SkillsPPt = () => {
             you.
           </h3>
         </div>
-        <MineSvg className="mineSvgMobile animate__animated animate__backInRight" />
+        <MineGeeThumb className="mineSvgMobile animate__animated animate__backInRight" />
       </div>
       <Skills />
     </div>

@@ -1,6 +1,6 @@
 import React from "react";
 import "./styles/Footer.css";
-import { ReactComponent as MineSvg } from "../assets/logoWhite.svg";
+import  MineSvg from "./svg/LogoWhite";
 import InstagramIcon from "@mui/icons-material/Instagram";
 import LinkedInIcon from "@mui/icons-material/LinkedIn";
 import MailOutlineIcon from "@mui/icons-material/MailOutline";

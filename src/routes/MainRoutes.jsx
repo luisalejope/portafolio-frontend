@@ -1,5 +1,5 @@
 import React from "react";
-import { Switch, Route } from "react-router-dom";
+import {Route, Routes } from "react-router-dom";
 import { MainLayout } from "../layouts/MainLayout";
 
 // import { Contact } from "../pages/Contact";
@@ -11,12 +11,12 @@ export const MainRoutes = () => {
   return (
     <MainLayout>
       <div>
-        <Switch>
-          <Route exact path="/" component={Home} />
-          <Route exact path="/my-work" component={MyWork} />
-          <Route exact path="/projects" component={Projects} />
+        <Routes>
+          <Route exact path="/" element={<Home/>} />
+          <Route exact path="/my-work" element={<MyWork/>}/>
+          <Route exact path="/projects" element={<Projects/>}/>
           {/* <Route exact path="/contact" component={Contact} /> */}
-        </Switch>
+        </Routes>
       </div>
     </MainLayout>
   );

@@ -1,5 +1,5 @@
 import React from 'react'
-import { Caroussel } from '../components/withContent/Caroussel';
+import { WorkList } from '../components/withContent/WorkList';
 import "./styles/MyWork.css";
 
 
@@ -13,11 +13,8 @@ export const MyWork = () => {
         <h2>You can find a taste of my work</h2>
       </div>
       <div className='content-container-mywork'>
-        <Caroussel />
+        <WorkList />
       </div>
-
-
-
     </div>
   )
 }

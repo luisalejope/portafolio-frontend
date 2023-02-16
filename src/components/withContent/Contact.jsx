@@ -16,13 +16,16 @@ import {
 } from "@mui/material";
 import "./styles/Contact.css";
 import { useForm } from "../../hooks/useForm";
-import { ReactComponent as MineSvgThumb } from "../../assets/mineGeeThumb.svg";
+import MineGeeThumb from "../svg/MineGeeThumb";
 // import { ReactComponent as Separator } from "../assets/separator.svg";
 
 export const Contact = () => {
-  const userId = process.env.REACT_APP_USER_ID;
+  const userId = '';
+  const templateId = '';
+  const serviceId = '';
+  /* const userId = process.env.REACT_APP_USER_ID;
   const templateId = process.env.REACT_APP_TEMPLATE_ID;
-  const serviceId = process.env.REACT_APP_SERVICE_ID;
+  const serviceId = process.env.REACT_APP_SERVICE_ID; */
 
   const [values, handleInputChange, reset] = useForm({
     name: "",
@@ -161,7 +164,7 @@ export const Contact = () => {
         </form>
       </div>
       <div className="mineGeeContainer">
-        <MineSvgThumb className="animate__animated animate__backInRight" />
+        <MineGeeThumb className="animate__animated animate__backInRight" />
       </div>
     </div>
   );

@@ -13,6 +13,8 @@
 
 .myWorkContainer>.content-container-mywork {
     position: relative;
-    height: 400px;
-    background-color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }

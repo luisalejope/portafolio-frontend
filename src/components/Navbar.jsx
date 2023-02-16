@@ -24,26 +24,23 @@ export const Navbar = () => {
         <div className="rightNav">
 
           <NavLink
-            activeClassName="active"
-            className="linkNav"
-            exact
+            className={({isActive}) => (isActive ? "linkNav active-style" : 'linkNav')}
+            exact='true'
             to="/"
           >
             Home
           </NavLink>
           <NavLink
-            activeClassName="active"
-            className="linkNav"
-            exact
+            className={({isActive}) => (isActive ? "linkNav active-style" : 'linkNav')}
+            exact='true'
             to="/my-work"
           >
             My Work
           </NavLink>
 
           <NavLink
-            activeClassName="active"
-            className="linkNav"
-            exact
+            className={({isActive}) => (isActive ? "linkNav active-style" : 'linkNav')}
+            exact='true'
             to="/projects"
           >
             Projects
@@ -68,9 +65,8 @@ export const Navbar = () => {
           <div className="menu">
             <div className="containerLink">
               <NavLink
-                activeClassName="active"
-                className="linkNav"
-                exact
+                className={({isActive}) => (isActive ? "linkNav active-style" : 'linkNav')}
+                exact='true'
                 to="/"
                 onClick={() => setPath('/')}
               >
@@ -80,9 +76,8 @@ export const Navbar = () => {
             </div>
             <div className="containerLink">
               <NavLink
-                activeClassName="active"
-                className="linkNav"
-                exact
+                className={({isActive}) => (isActive ? "linkNav active-style" : 'linkNav')}
+                exact='true'
                 to="/my-work"
                 onClick={() => setPath('/my-work')}
               >
@@ -92,9 +87,8 @@ export const Navbar = () => {
             </div>
             <div className="containerLink">
               <NavLink
-                activeClassName="active"
-                className="linkNav"
-                exact
+                className={({isActive}) => (isActive ? "linkNav active-style" : 'linkNav')}
+                exact='true'
                 to="/projects"
                 onClick={() => setPath('/projects')}
               >
