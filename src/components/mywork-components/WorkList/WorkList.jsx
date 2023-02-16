@@ -1,7 +1,7 @@
 import React from "react";
 
-import { Card } from "../Card";
-import './styles/WorkList.css'
+import { Card } from "../../global/index";
+import './style.css'
 export const WorkList = () => {
   
   return (

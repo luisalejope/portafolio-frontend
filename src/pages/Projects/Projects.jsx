@@ -1,5 +1,5 @@
 import React from 'react'
-import { Construction } from '../components/Construction'
+import { Construction } from '../../components/global/index'
 export const Projects = () => {
     return (
         <div>

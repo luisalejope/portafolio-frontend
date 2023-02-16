@@ -1,11 +1,11 @@
 import React, { useEffect, useState } from "react";
 import { Link, NavLink } from "react-router-dom";
-import "./styles/Navbar.css";
-import desktopLogo from "../assets/logoPortafolio1.png";
-import mobileLogo from "../assets/logoSimpleSinFondo.png";
-import useWindowDimensions from "../hooks/useWindowDimensions";
+import "./style.css";
+import desktopLogo from "../../../assets/logoPortafolio1.png";
+import mobileLogo from "../../../assets/logoSimpleSinFondo.png";
+import useWindowDimensions from "../../../hooks/useWindowDimensions";
 
-export const Navbar = () => {
+const Navbar = () => {
 
   const { height, width } = useWindowDimensions();
   const [path, setPath] = useState(window.location.pathname);
@@ -107,3 +107,6 @@ export const Navbar = () => {
     </>
   );
 };
+
+
+export default Navbar

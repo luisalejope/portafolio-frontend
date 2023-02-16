@@ -1,5 +1,5 @@
 import React from "react";
-import "./styles/Skills.css";
+import "./style.css";
 import DesignServicesOutlinedIcon from "@mui/icons-material/DesignServicesOutlined";
 import CodeOutlinedIcon from "@mui/icons-material/CodeOutlined";
 export const Skills = () => {

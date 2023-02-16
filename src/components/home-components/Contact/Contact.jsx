@@ -14,9 +14,9 @@ import {
   FormControlLabel,
   Button,
 } from "@mui/material";
-import "./styles/Contact.css";
-import { useForm } from "../../hooks/useForm";
-import MineGeeThumb from "../svg/MineGeeThumb";
+import "./style.css";
+import { useForm } from "../../../hooks/useForm";
+import MineGeeThumb from "../../svg/MineGeeThumb";
 // import { ReactComponent as Separator } from "../assets/separator.svg";
 
 export const Contact = () => {

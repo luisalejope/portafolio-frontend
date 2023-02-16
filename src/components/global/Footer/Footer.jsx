@@ -1,11 +1,12 @@
 import React from "react";
-import "./styles/Footer.css";
-import  MineSvg from "./svg/LogoWhite";
+import "./style.css";
+import  MineSvg from "../../svg/LogoWhite";
 import InstagramIcon from "@mui/icons-material/Instagram";
 import LinkedInIcon from "@mui/icons-material/LinkedIn";
 import MailOutlineIcon from "@mui/icons-material/MailOutline";
 import GitHubIcon from "@mui/icons-material/GitHub";
-export const Footer = () => {
+
+const Footer = () => {
   return (
     <div className="footerContainer">
       <div className="footerContent">
@@ -30,3 +31,5 @@ export const Footer = () => {
     </div>
   );
 };
+
+export default Footer

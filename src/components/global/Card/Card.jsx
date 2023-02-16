@@ -1,8 +1,8 @@
 import React from "react";
-import "./styles/Card.css";
+import "./style.css";
 import { Link } from "react-router-dom";
 
-export const Card = () => {
+const Card = () => {
   return (
     <>
       <div className="flip-card">
@@ -29,3 +29,5 @@ export const Card = () => {
     </>
   );
 };
+
+export default Card

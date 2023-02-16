@@ -1,7 +1,7 @@
 import React from "react";
-import { Footer } from "../components/Footer";
-import { Navbar } from "../components/Navbar";
-import "./styles/MainLayout.css";
+import { Footer } from "../components/global/index";
+import { Navbar } from "../components/global/index";
+import "./style.css";
 export const MainLayout = ({ children }) => {
   return (
     <React.Fragment>

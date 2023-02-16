@@ -1,7 +1,7 @@
 import React from "react";
-import { Skills } from "../withContent/Skills";
-import "./styles/SkillsPPt.css";
-import  MineGeeThumb from "../svg/MineGeeThumb";
+import { Skills } from "../Skills/Skills";
+import "./style.css";
+import  MineGeeThumb from "../../svg/MineGeeThumb";
 import "animate.css";
 export const SkillsPPt = () => {
   return (

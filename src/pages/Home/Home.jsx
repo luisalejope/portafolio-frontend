@@ -1,10 +1,10 @@
 import React from "react";
-import "./styles/Home.css";
-import profileImg from "../assets/hotdog.jpg";
+import "./style.css";
+import profileImg from "../../assets/hotdog.jpg";
 import "animate.css";
-import { Skills } from "../components/withContent/Skills";
-import { Contact } from "../components/withContent/Contact";
-import { SkillsPPt } from "../components/composites/SkillsPPt";
+import { Skills } from "../../components/home-components/Skills/Skills";
+import { Contact } from "../../components/home-components/Contact/Contact";
+import { SkillsPPt } from "../../components/home-components/SkillsPPT/SkillsPPt";
 
 export const Home = () => {
   return (

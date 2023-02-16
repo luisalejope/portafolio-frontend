@@ -1,7 +1,8 @@
 import React from "react";
-import constructionImg from "../assets/construction.png";
-import './styles/Construction.css'
-export const Construction = () => {
+import constructionImg from "../../../assets/construction.png";
+import './style.css'
+
+const Construction = () => {
   return (
     <>
       <div className="constructionContainer">
@@ -10,3 +11,5 @@ export const Construction = () => {
     </>
   );
 };
+
+export default Construction

@@ -1,6 +1,6 @@
 import React from 'react'
-import { WorkList } from '../components/withContent/WorkList';
-import "./styles/MyWork.css";
+import { WorkList } from '../../components/mywork-components/WorkList/WorkList';
+import "./style.css";
 
 
 export const MyWork = () => {

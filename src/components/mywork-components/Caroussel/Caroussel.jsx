@@ -1,5 +1,5 @@
 import React from 'react'
-import './styles/Caroussel.css'
+import './style.css'
 // Import Swiper React components
 import { Swiper, SwiperSlide } from "swiper/react";
 import 'swiper/swiper-bundle.min.css'
