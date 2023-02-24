@@ -1,9 +1,9 @@
 import React from 'react'
-import { WorkList } from '../../components/mywork-components/WorkList/WorkList';
+import { WorkList } from '../../components/mywork-components/index';
 import "./style.css";
 
 
-export const MyWork = () => {
+const MyWork = () => {
   return (
     <div className="myWorkContainer">
       <div className="myWorkFirst">
@@ -18,3 +18,5 @@ export const MyWork = () => {
     </div>
   )
 }
+
+export default MyWork

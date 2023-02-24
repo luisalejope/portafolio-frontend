@@ -1,27 +1,34 @@
-import React from "react";
+import React, { useState } from "react";
 import "./style.css";
 import { Link } from "react-router-dom";
 
-const Card = () => {
+const Card = ({ title, description, children }) => {
+  const [isHovered, setIsHovered] = useState(false);
+
+  const handleMouseEnter = () => {
+    setIsHovered(true);
+  };
+
+  const handleMouseLeave = () => {
+    setIsHovered(false);
+  };
+
   return (
     <>
-      <div className="flip-card">
+      <div className="flip-card" onMouseEnter={handleMouseEnter} onMouseLeave={handleMouseLeave}>
         <div className="flip-card-inner">
           <div className="flip-card-front">
-            <img
-              src={`https://upload.wikimedia.org/wikipedia/commons/thumb/8/8f/Example_image.svg/600px-Example_image.svg.png`}
-              className="imgCard"
-              alt="Avatar"
-            />
+            <h3>
+              {title}
+            </h3>
+            <p>
+              {description}
+            </p>
           </div>
           <div className="flip-card-back">
-            <div className="dataContainer">
-              <h5>ssdfsdsdfsd</h5>
-              <p>sfdsfsdfsd</p>
-              <p>
-                <small>asdasaddasd</small>
-              </p>
-              {/* <Link to={`./hero/${id}`}>Details...</Link> */}
+            <div className="card-container">
+              {/* {children} */}
+              {isHovered && children}
             </div>
           </div>
         </div>

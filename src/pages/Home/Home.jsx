@@ -2,11 +2,9 @@ import React from "react";
 import "./style.css";
 import profileImg from "../../assets/hotdog.jpg";
 import "animate.css";
-import { Skills } from "../../components/home-components/Skills/Skills";
-import { Contact } from "../../components/home-components/Contact/Contact";
-import { SkillsPPt } from "../../components/home-components/SkillsPPT/SkillsPPt";
+import { Contact, SkillsPPt } from "../../components/home-components/index";
 
-export const Home = () => {
+const Home = () => {
   return (
     <div className="homeContainer">
       <div className="firstContainer">
@@ -20,12 +18,10 @@ export const Home = () => {
         <h2>Front-end developer</h2>
         <img className="profilePhoto" src={profileImg} alt="profilePhoto" />
       </div>
-      
-        <SkillsPPt />
-      
-        <Contact />
-
-      
+      <SkillsPPt />
+      <Contact />
     </div>
   );
 };
+
+export default Home
