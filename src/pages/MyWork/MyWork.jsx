@@ -8,7 +8,7 @@ const MyWork = () => {
     <div className="myWorkContainer">
       <div className="myWorkFirst">
         <h1>
-          <mark>Hello</mark>
+          Hello
         </h1>
         <h2>You can find a taste of my work</h2>
       </div>

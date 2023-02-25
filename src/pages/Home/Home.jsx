@@ -1,6 +1,5 @@
 import React from "react";
 import "./style.css";
-import profileImg from "../../assets/hotdog.jpg";
 import "animate.css";
 import { Contact, SkillsPPt } from "../../components/home-components/index";
 
@@ -16,7 +15,7 @@ const Home = () => {
         </h1>
         <h2>Computer Science Engineer and Minor in Basic Psychology</h2>
         <h2>Front-end developer</h2>
-        <img className="profilePhoto" src={profileImg} alt="profilePhoto" />
+        <img className="profilePhoto" src='https://github.com/pineapplexpres/Images/blob/main/portafolio/hotdog.jpg?raw=true' alt="profilePhoto" />
       </div>
       <SkillsPPt />
       <Contact />

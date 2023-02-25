@@ -52,3 +52,9 @@
 .checkBoxActive {
         color: #fe4066;
 }
+
+@media (max-width: 844px) {
+    .mineSvgMobile {
+      display: none;
+    }
+}

@@ -1,8 +1,6 @@
 import React, { useEffect, useState } from "react";
 import { Link, NavLink } from "react-router-dom";
 import "./style.css";
-import desktopLogo from "../../../assets/logoPortafolio1.png";
-import mobileLogo from "../../../assets/logoSimpleSinFondo.png";
 import useWindowDimensions from "../../../hooks/useWindowDimensions";
 
 const Navbar = () => {
@@ -16,7 +14,7 @@ const Navbar = () => {
         <div className="itemsContainer">
           <div className="leftNav">
             <Link to="/">
-              <img className="logoNav" src={desktopLogo} alt="desktopLogo" />
+              <img className="logoNav" src='https://github.com/pineapplexpres/Images/blob/main/portafolio/logoPortafolio1.png?raw=true' alt="desktopLogo" />
             </Link>
           </div>
         </div>
@@ -24,14 +22,14 @@ const Navbar = () => {
         <div className="rightNav">
 
           <NavLink
-            className={({isActive}) => (isActive ? "linkNav active-style" : 'linkNav')}
+            className={path === '/' ? "linkNav active-style" : 'linkNav'}
             exact='true'
             to="/"
           >
             Home
           </NavLink>
           <NavLink
-            className={({isActive}) => (isActive ? "linkNav active-style" : 'linkNav')}
+            className={path === '/my-work' ? "linkNav active-style" : 'linkNav'}
             exact='true'
             to="/my-work"
           >
@@ -39,7 +37,7 @@ const Navbar = () => {
           </NavLink>
 
           <NavLink
-            className={({isActive}) => (isActive ? "linkNav active-style" : 'linkNav')}
+            className={path === '/projects'? "linkNav active-style" : 'linkNav'}
             exact='true'
             to="/projects"
           >
@@ -65,36 +63,36 @@ const Navbar = () => {
           <div className="menu">
             <div className="containerLink">
               <NavLink
-                className={({isActive}) => (isActive ? "linkNav active-style" : 'linkNav')}
+                className={path === '/' ? "linkNav active-style" : 'linkNav'}
                 exact='true'
                 to="/"
                 onClick={() => setPath('/')}
               >
                 Home
               </NavLink>
-              {path === '/' && <img className="logoNav" src={mobileLogo} alt="desktopLogo" />}
+              {path === '/' && <img className="logoNav" src='https://github.com/pineapplexpres/Images/blob/main/portafolio/logoSimpleSinFondo.png?raw=true' alt="desktopLogo" />}
             </div>
             <div className="containerLink">
               <NavLink
-                className={({isActive}) => (isActive ? "linkNav active-style" : 'linkNav')}
+                className={path === '/my-work' ? "linkNav active-style" : 'linkNav'}
                 exact='true'
                 to="/my-work"
                 onClick={() => setPath('/my-work')}
               >
                 My Work
               </NavLink>
-              {path === '/my-work' && <img className="logoNav" src={mobileLogo} alt="desktopLogo" />}
+              {path === '/my-work' && <img className="logoNav" src='https://github.com/pineapplexpres/Images/blob/main/portafolio/logoSimpleSinFondo.png?raw=true' alt="desktopLogo" />}
             </div>
             <div className="containerLink">
               <NavLink
-                className={({isActive}) => (isActive ? "linkNav active-style" : 'linkNav')}
+                className={path === '/projects'? "linkNav active-style" : 'linkNav'}
                 exact='true'
                 to="/projects"
                 onClick={() => setPath('/projects')}
               >
                 Projects
               </NavLink>
-              {path === '/projects' && <img className="logoNav" src={mobileLogo} alt="desktopLogo" />}
+              {path === '/projects' && <img className="logoNav" src='https://github.com/pineapplexpres/Images/blob/main/portafolio/logoSimpleSinFondo.png?raw=true' alt="desktopLogo" />}
             </div>
           </div>
         </div>

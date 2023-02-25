@@ -1,6 +1,6 @@
 import React from "react";
 import "./style.css";
-import  MineSvg from "../../svg/LogoWhite";
+import  LogoWhite from "../../svg/LogoWhite";
 import InstagramIcon from "@mui/icons-material/Instagram";
 import LinkedInIcon from "@mui/icons-material/LinkedIn";
 import MailOutlineIcon from "@mui/icons-material/MailOutline";
@@ -10,7 +10,7 @@ const Footer = () => {
   return (
     <div className="footerContainer">
       <div className="footerContent">
-        <MineSvg />
+        <LogoWhite />
         <div className="socialContainer">
           <InstagramIcon className="logos" />
           <LinkedInIcon className="logos" />

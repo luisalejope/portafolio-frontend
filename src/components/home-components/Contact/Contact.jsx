@@ -17,7 +17,7 @@ import {
 import "./style.css";
 import { useForm } from "../../../hooks/useForm";
 import MineGeeThumb from "../../svg/MineGeeThumb";
-// import { ReactComponent as Separator } from "../assets/separator.svg";
+
 
 const Contact = () => {
   const userId = '';
@@ -164,7 +164,7 @@ const Contact = () => {
         </form>
       </div>
       <div className="mineGeeContainer">
-        <MineGeeThumb className="animate__animated animate__backInRight" />
+        <MineGeeThumb className="mineSvgMobile animate__animated animate__backInRight" />
       </div>
     </div>
   );

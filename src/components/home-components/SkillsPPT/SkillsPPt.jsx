@@ -2,7 +2,7 @@ import React from "react";
 import "./style.css";
 import DesignServicesOutlinedIcon from "@mui/icons-material/DesignServicesOutlined";
 import CodeOutlinedIcon from "@mui/icons-material/CodeOutlined";
-import  MineGeeThumb from "../../svg/MineGeeThumb";
+import  MineGee from "../../svg/MineGee";
 import "animate.css";
 
 const SkillsPPt = () => {
@@ -21,7 +21,7 @@ const SkillsPPt = () => {
             you.
           </h3>
         </div>
-        <MineGeeThumb className="mineSvgMobile animate__animated animate__backInRight" />
+        <MineGee className="mineSvgMobile animate__animated animate__backInRight" />
       </div>
       <div className="skillsContainer">
         <div className="skill">

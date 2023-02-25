@@ -1,12 +1,11 @@
 import React from "react";
-import constructionImg from "../../../assets/construction.png";
 import './style.css'
 
 const Construction = () => {
   return (
     <>
       <div className="constructionContainer">
-        <img className="constructionImage" src={constructionImg} alt="construction" />
+        <img className="constructionImage" src='https://github.com/pineapplexpres/Images/blob/main/portafolio/construction-page-img.png?raw=true' alt="construction" />
       </div>
     </>
   );
