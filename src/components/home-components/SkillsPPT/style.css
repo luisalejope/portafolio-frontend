@@ -1,0 +1,164 @@
+.secondContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 1499px;
+}
+
+.secondContainer > .presentationContainer > .thought > h3 {
+  font-weight: normal;
+  text-align: center;
+  line-height: 2rem;
+  color: white;
+}
+
+.presentationContainer {
+  position: absolute;
+  left: 0;
+  top: 640px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 600px;
+  background-color: #e3e3e3;
+}
+
+.thought {
+  display: flex;
+  background-color: #323232;
+  padding: 20px;
+  border-radius: 30px;
+  min-width: 40px;
+  max-width: 600px;
+  min-height: 40px;
+  margin: 20px;
+  margin-right: 50px;
+  position: relative;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+.thought:before,
+.thought:after {
+  content: "";
+  background-color: #323232;
+  border-radius: 50%;
+  display: block;
+  position: absolute;
+  z-index: -1;
+}
+.thought:before {
+  width: 44px;
+  height: 44px;
+  top: -12px;
+  left: 28px;
+  box-shadow: -50px 30px 0 -12px #323232;
+}
+.thought:after {
+  bottom: -10px;
+  right: 26px;
+  width: 30px;
+  height: 30px;
+  box-shadow: 40px -34px 0 0 #323232, -28px -6px 0 -2px #323232,
+    -24px 17px 0 -6px #323232, -5px 25px 0 -10px #323232;
+}
+
+.skillsContainer {
+  position: absolute;
+  top: 1150px;
+  width: 1200px;
+  background-color: white;
+  border-radius: 16px;
+  box-shadow: 0 5px 5px 0 rgb(233 240 243 / 50%), 0 0 0 1px #e6ecf8;
+  display: grid;
+  grid-template-columns: 600px 600px;
+}
+
+.skill {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  padding: 70px 45px;
+}
+
+.dataContainer {
+  margin-top: 3.1rem;
+}
+
+.skill > h2 {
+  font-weight: bold;
+}
+.dataContainer > h3, .skill > h3 {
+  font-weight: normal;
+  text-align: center;
+}
+.dataContainer > h4 {
+  text-align: center;
+  color: #fe4066;
+}
+
+.separator {
+  border: 1px solid #e6ecf8;
+  border-style: none none none solid;
+}
+
+.iconColor {
+  color: #fe4066;
+}
+
+
+@media (max-width: 844px) {
+  .secondContainer {
+    height: fit-content;
+    flex-direction: column;
+  }
+
+  .mineSvgMobile {
+    display: none;
+  }
+
+  .presentationContainer {
+    position: relative;
+    left: 0;
+    top: 0;
+    height: fit-content;
+    position: relative;
+    margin-bottom: 10px;
+    padding: 15px;
+    background-color: #ffffff;
+  }
+  .thought {
+    background-color: white;
+    padding: 0;
+    margin-right: 20px;
+  }
+  .thought:before {
+    display: none;
+  }
+  .thought:after {
+    display: none;
+  }
+  .thought > h3 {
+    color: #323232 !important;
+    text-align: justify !important;
+  }
+  .skillsContainer {
+    position: relative;
+    top: 0;
+    width: 100%;
+    background-color: white;
+    border-radius: 16px;
+    box-shadow: 0 5px 5px 0 rgb(233 240 243 / 50%), 0 0 0 1px #e6ecf8;
+    display: flex;
+    flex-direction: column;
+  }
+  .skill {
+    padding: 0px 0px;
+  }
+  
+  .dataContainer {
+    margin-top: 0;
+  }
+}

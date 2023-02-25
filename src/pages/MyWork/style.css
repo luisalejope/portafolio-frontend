@@ -1,0 +1,21 @@
+.myWorkContainer {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.myWorkContainer>.myWorkFirst {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    margin: 3rem;
+}
+
+.myWorkContainer>.content-container-mywork {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
