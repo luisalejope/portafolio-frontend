@@ -1,4 +1,5 @@
 import React from 'react'
+import { Modal } from '../../components/global';
 import { WorkList } from '../../components/mywork-components/index';
 import "./style.css";
 

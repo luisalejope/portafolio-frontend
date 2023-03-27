@@ -1,6 +1,6 @@
 import React from "react";
 
-import { Card, CircularProgress, InputPassword, InvalidInput, MobileMenuButton } from "../../global/index";
+import { Card, CircularProgress, InputPassword, InvalidInput, MobileMenuButton, Modal } from "../../global/index";
 
 import './style.css'
 
@@ -20,13 +20,8 @@ const WorkList = () => {
         <Card title='Hamburger Menu' description='A simple Hamburger menu behavior' img='https://github.com/pineapplexpres/Images/blob/main/portafolio/hamburger-menu-img.PNG?raw=true'>
           <MobileMenuButton />
         </Card>
-
         <Card title='Information Modal' description='A information modal activated by a button' img='https://github.com/pineapplexpres/Images/blob/main/portafolio/logoSimpleSinFondo.png?raw=true'>
-          <div>
-            <h3>
-              Not ready / In progress...
-            </h3>
-          </div>
+          <Modal />
         </Card>
         <Card title='Simple button with animation' description='A button with animation when to call atention' img='https://github.com/pineapplexpres/Images/blob/main/portafolio/logoSimpleSinFondo.png?raw=true'>
           <div>
