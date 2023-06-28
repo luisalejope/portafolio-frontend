@@ -1,6 +1,6 @@
 /* The Modal (background) */
 .modal {
-    position: absolute; /* Stay in place */
+    position: fixed; /* Stay in place */
     z-index: 10; /* Sit on top */
     left: 0;
     top: 0;
@@ -17,11 +17,20 @@
     margin: auto;
     padding: 20px;
     border: 1px solid #888;
+    border-radius: 10px;
     width: 80%;
+    margin-top: 30%
+  }
+
+  .all-modal-content{
+    display: flex;
+    width: 100%;
   }
   
   /* The Close Button */
   .close {
+    background: none;
+    border: none;
     color: #aaaaaa;
     float: right;
     font-size: 28px;
@@ -33,4 +42,14 @@
     color: #000;
     text-decoration: none;
     cursor: pointer;
+  }
+
+  .close-container {
+    display: flex;
+    align-items: flex-start;
+    width: 20px;
+  }
+
+  .content-text{
+    width: 100%;
   }

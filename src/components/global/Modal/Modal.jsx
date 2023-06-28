@@ -1,23 +1,23 @@
-import React, { useState } from "react";
+import React, { Children, useState } from "react";
 import './style.css'
 
-const Modal = () => {
-    const [ modalStatus, setModalStatus ] = useState(false);
-
-    const handleModal = () => {
-        setModalStatus(!modalStatus);
-    }
+const Modal = ({handleModal, children}) => {
     return (
         <>
-            <button id="myBtn" onClick={handleModal}>Open Modal</button>
-            {modalStatus && (
-                <div id="myModal" class="modal">
-                    <div class="modal-content">
-                        <span class="close" onClick={handleModal}>&times;</span>
-                        <p>Some text in the Modal..</p>
+
+            <div id="myModal" className="modal">
+                <div className="modal-content">
+                    <div className="all-modal-content">
+                        <div className="content-text">
+                            { children }
+                        </div>
+                        <div className="close-container">
+                            <button className="close" onClick={handleModal}>&times;</button>
+                        </div>
                     </div>
                 </div>
-            )}
+            </div>
+
         </>
     );
 };
