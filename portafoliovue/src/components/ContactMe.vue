@@ -1,5 +1,5 @@
 <script setup>
-import { ref, computed } from 'vue';
+import { ref } from 'vue';
 import Input from "@/components/global/Input.vue";
 import Button from "@/components/global/Button.vue"
 const name = ref('')
@@ -32,17 +32,17 @@ const handleButton = ()=>console.log('hola boton send')
             <template v-for="(service, key) in myServices" :key="key">
               <div class="service">
                 <label :for="service.name">{{service.name}}</label>
-                <input class="check-box-button" v-model="myServices[service.name].checked" type="checkbox" :title="service.name"/>
+                <Input class="check-box-button" v-model="myServices[service.name].checked" type="checkbox" :title="service.name"/>
               </div>
             </template>
           </div>
         </div>
 
-          <input v-model="name" type="text"  :disabled='false' :title="inputName"/>
-          <input v-model="email" type="email" :disabled='false' :title="inputName"/>
+          <Input v-model="name" type="text"  :disabled='false' :title="inputName"/>
+          <Input v-model="email" type="email" :disabled='false' :title="inputName"/>
         
 
-        <input v-model="message" type="text" :disabled='false' title="inputMessage"/>
+        <Input v-model="message" type="text" :disabled='false' title="inputMessage"/>
         
         <div class="">
           <Button text='Send' buttonType="primary" @action="handleButton"/>

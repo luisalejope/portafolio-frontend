@@ -1,7 +1,7 @@
 <script setup>
 import { ref, onBeforeUnmount, onMounted, nextTick } from 'vue';
 import Skills from '@/components/Skills.vue';
-import Contact from '@/components/Contact.vue';
+import ContactMe from '@/components/ContactMe.vue';
 import MineGeeSvg from '@/components/svg/MineGeeSvg.vue'
 
 const clouds = ref(null);
@@ -53,11 +53,13 @@ onBeforeUnmount(() => {
           excited at the prospect of bringing my talents to you.
         </p>
       </div>
-      <MineGeeSvg />
+      <div class="w-xl">
+        <MineGeeSvg />
+      </div>
     </div>
   </div>
   <Skills />
-  <Contact />
+  <ContactMe />
 </template>
 
 <style scoped>
