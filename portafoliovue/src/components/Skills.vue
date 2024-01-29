@@ -87,7 +87,7 @@ const skills = {
 #skills {
     position: relative;
     padding: 0 150px;
-    background: #1c0522;
+    background: $revolver-950;
 
     h2 {
         font-size: 3.5em;

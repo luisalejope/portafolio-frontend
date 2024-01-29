@@ -46,73 +46,49 @@ const router = useRouter();
     </header>
 </template>
 
-<style scoped>
-/* .wrapper {
-    display: flex;
-    justify-content: center;
+<style lang="scss" scoped>
+header {
+    position: absolute;
+    top: 0;
+    left: 0%;
     width: 100%;
-    height: 3.5rem;
-    background-color: rgb(233, 232, 232);
-    -webkit-box-shadow: 0px 3px 13px -5px rgba(0, 0, 0, 0.42);
-    -moz-box-shadow: 0px 3px 13px -5px rgba(0, 0, 0, 0.42);
-    box-shadow: 0px 3px 13px -5px rgba(0, 0, 0, 0.42);
-}
-
-.backwards-container {
-    width: 120px;
-    animation: move-left 2s linear reverse;
-
-}
-
-.backwards-container>h2 {
-    margin-left: 1rem;
-}
-
-.logout-container {
-    width: 70px;
-}
-
-.navContainer {
-    width: 90%;
+    padding: 30px 100px;
     display: flex;
-}
-
-.router-links,
-.backwards-container {
-    display: flex;
-    align-items: center;
-    justify-content: flex-start;
-}
-
-.routes {
-    width: 100%;
-    display: flex;
-    align-items: center;
     justify-content: space-between;
-}
+    align-items: center;
+    z-index: 10000;
 
-.linkNav {
-    font-size: 25px;
-    margin-left: 1rem;
-    font-size: large;
-    text-decoration: none;
-    color: #323232;
-}
+    .logo {
+        color: #fff;
+        font-weight: 700;
+        text-decoration: none;
+        font-size: 2em;
+        text-transform: uppercase;
+        letter-spacing: 2px;
+    }
 
-.linkNav:hover {
-    color: rgb(0, 75, 173);
-}
+    .navContainer {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
 
-.active {
-    color: rgb(0, 75, 173);
-}
+    .navContainer .router-link {
+        list-style: none;
+        margin-left: 20px;
+    }
 
-@keyframes move-left {
-  from {
-    left: 0;
-  }
-  to {
-    left: 100%;
-  }
-} */
+    .navContainer .router-link .linkNav {
+        text-decoration: none;
+        padding: 6px 15px;
+        color: #fff;
+        border-radius: 20px;
+    }
+
+    .navContainer .router-link .linkNav:hover,
+    .navContainer .router-link .linkNav.active {
+        background-color: #fff;
+        color: #2b1055;
+    }
+}
 </style>
