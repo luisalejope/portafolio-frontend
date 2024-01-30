@@ -62,7 +62,7 @@ const handleButton = ()=>console.log('hola boton send')
     width: 100%;
     justify-content: space-between;
     padding: 0 150px;
-    background: #1c0522;
+    //background: #1c0522;
 
     span {
       color: #ff6c40;

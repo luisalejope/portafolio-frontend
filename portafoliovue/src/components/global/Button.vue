@@ -23,47 +23,51 @@ const handleClick = () => emit('action')
 <template >
     <button id="button" :class="`${buttonType} ${disabled ? 'disabled' : ''}`" :disabled="disabled" @click="handleClick">{{ text }}</button>
 </template>
-<style scoped>
+<style lang="scss" scoped>
 #button {
   width: 100%;
   height: 2.5rem;
   border: none;
   cursor: pointer;
+  text-decoration: none;
+  border-style: none;
+  font-size: 1.5em;
+  border-radius: 40px;
+  display: inline-block;
+    &.primary {
+        background-color: $jagger-50;
+        color: $jagger-950;
+        &:hover {
+            background-color: $revolver-900;
+        }
+    }
+    &.disabled {
+        background-color: rgb(194, 194, 194) !important;
+    }
+
+    &.secondary {
+        background-color: rgb(160, 160, 160);
+        color: rgb(255, 255, 255);
+        border-radius: 4px;
+        &:hover {
+            background-color: rgb(150, 150, 150);
+        }
+    }
+    
+    &.link {
+        background-color: white;
+        color: rgb(0, 75, 173);
+        &:hover {
+            color: rgb(0, 103, 238);
+            text-decoration: underline;
+        }
+    }
 }
 
-.disabled {
-    background-color: rgb(194, 194, 194) !important;
-}
 
-.primary {
-    background-color: rgb(0, 75, 173);
-    color: white;
-    border-radius: 4px;
-}
-.primary:hover {
-    background-color: rgb(0, 103, 238);
-}
 
-.font-size-bg {
-    font-size: 30px;
-}
 
-.secondary {
-    background-color: rgb(160, 160, 160);
-    color: rgb(255, 255, 255);
-    border-radius: 4px;
-}
-.secondary:hover {
-    background-color: rgb(150, 150, 150);
-}
 
-.link {
-    background-color: white;
-    color: rgb(0, 75, 173);
-}
-.link:hover {
-    color: rgb(0, 103, 238);
-    text-decoration: underline;
-}
+
 
 </style>
