@@ -4,6 +4,8 @@ import Skills from '@/components/Skills.vue';
 import ContactMe from '@/components/ContactMe.vue';
 import MineGeeSvg from '@/components/svg/MineGeeSvg.vue'
 import Button from '@/components/global/Button.vue';
+import LinkedinSvg from '../components/svg/LinkedinSvg.vue';
+import Icon from '@/components/global/Icon.vue';
 </script>
 
 <template>
@@ -14,10 +16,16 @@ import Button from '@/components/global/Button.vue';
   </section> -->
   <section class="welcome">
     <div>
-      <div class="hi-message">
-        Hello, i’m
+      <div class="welcome-message">
+        Hello, I’m
       </div>
-      <h2 id="text">Hello I'm Luis</h2>
+      <h2 class="welcome-name">Luis Peña</h2>
+      <h1 class="welcome-roles">FRONTEND DEVELOPER | UX/UI ANALYST | COMPUTER ENGINEER</h1>
+      <div class="welcome-icons">
+        <Icon size='icon-xxl'>
+          <LinkedinSvg />
+        </Icon>
+      </div>
       <Button text="Hola" buttonType="primary" />
       <a href="#sec" id="btn">Explore</a>
     </div>
@@ -58,22 +66,32 @@ import Button from '@/components/global/Button.vue';
   display: flex;
   align-items: center;
   justify-content: space-between;
+
+  &-message {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 40px 40px 40px 0px;
+    width: 134px;
+    color: $white;
+    height: 64px;
+    background: linear-gradient(108deg, #FC4A1A -36.03%, #F7B733 128.44%);
+    font-size: $fs-s;
+    font-style: normal;
+    line-height: normal;
+    font-weight: 700;
+  }
+
+  &-name{
+    font-size: $fs-xl;
+  }
+
+  &-image{
+  
+  }
 }
 
-.welcome-image{
 
-}
-
-.hi-message {
-  border-radius: 40px 40px 40px 0px;
-  background: linear-gradient(108deg, #FC4A1A -36.03%, #F7B733 128.44%);
-}
-
-#text {
-  color: #fff;
-  white-space: nowrap;
-  font-size: 7vw;
-}
 
 #btn {
   text-decoration: none;
