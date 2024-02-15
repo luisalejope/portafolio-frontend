@@ -8,6 +8,7 @@ import CssSvg from '@/components/svg/CssSvg.vue';
 import BootstrapSvg from '@/components/svg/BootstrapSvg.vue';
 import GithubSvg from '@/components/svg/GithubSvg.vue';
 import Icon from '@/components/global/Icon.vue';
+import InfoCard from '@/components/global/InfoCard.vue';
 
 const skills = {
     VueSvg: 
@@ -23,6 +24,8 @@ const skills = {
     GithubSvg: 
         'I\'ve used Github since my degree, with repositories for university, work, and hobby projects. I\'ve also used Bitbucket and Gitlab. Explore my Github to see more.'
 }
+
+
 
 </script>
 
@@ -80,6 +83,17 @@ const skills = {
                 </p>
             </div>
         </div>
+        <div class="ag-format-container">
+            <div class="ag-courses_box">
+                <InfoCard />
+                <InfoCard />
+                <InfoCard />
+                <InfoCard />
+                <InfoCard />
+                <InfoCard />
+                <InfoCard />
+            </div>
+        </div>
   </div>
 </template>
 
@@ -109,6 +123,19 @@ const skills = {
             margin: 10px 0;
             text-align: justify;
         }
+    }
+
+    .ag-courses_box {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-align: start;
+        -ms-flex-align: start;
+        align-items: flex-start;
+        -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+
+        padding: 50px 0;
     }
 }
 </style>

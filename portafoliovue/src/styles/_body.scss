@@ -13,6 +13,12 @@ body {
     background: $bunker-950;
 }
 
+#app {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
 
 svg {
     display: flex;

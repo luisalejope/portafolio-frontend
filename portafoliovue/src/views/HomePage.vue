@@ -4,8 +4,11 @@ import Skills from '@/components/Skills.vue';
 import ContactMe from '@/components/ContactMe.vue';
 import MineGeeSvg from '@/components/svg/MineGeeSvg.vue'
 import Button from '@/components/global/Button.vue';
-import LinkedinSvg from '../components/svg/LinkedinSvg.vue';
+import LinkedinSvg from '@/components/svg/LinkedinSvg.vue';
+import GithubLittleSvg from '@/components/svg/GithubLittleSvg.vue'
 import Icon from '@/components/global/Icon.vue';
+import AboutMe from '@/components/AboutMe.vue';
+import MainProjects from '@/components/MainProjects.vue';
 </script>
 
 <template>
@@ -15,44 +18,34 @@ import Icon from '@/components/global/Icon.vue';
     <img src="https://github.com/pineapplexpres/Images/blob/main/portafolio/landscape3.png?raw=true" alt="" id="landscape" ref="landscape" />
   </section> -->
   <section class="welcome">
-    <div>
-      <div class="welcome-message">
-        Hello, I’m
+    <div class="welcome-container">
+      <div class="welcome-info">
+        <div class="welcome-message">
+          Hello, I’m
+        </div>
+        <h2 class="welcome-name">Luis Peña</h2>
+        <h1 class="welcome-roles">FRONTEND DEVELOPER | UX/UI ANALYST | COMPUTER ENGINEER</h1>
+        <div class="welcome-icons">
+          <Icon size='icon-l'>
+            <LinkedinSvg />
+          </Icon>
+          <Icon size='icon-l'>
+            <GithubLittleSvg />
+          </Icon>
+        </div>
       </div>
-      <h2 class="welcome-name">Luis Peña</h2>
-      <h1 class="welcome-roles">FRONTEND DEVELOPER | UX/UI ANALYST | COMPUTER ENGINEER</h1>
-      <div class="welcome-icons">
-        <Icon size='icon-xxl'>
-          <LinkedinSvg />
-        </Icon>
-      </div>
-      <Button text="Hola" buttonType="primary" />
-      <a href="#sec" id="btn">Explore</a>
-    </div>
-    <div class="welcome-image">
-      <MineGeeSvg />
-    </div>
-  </section>
-  <div class="sec" id="sec">
-    <div class="profile">
-      <div id="information">
-        <h2>Computer Engineer</h2>
-        <h3>Front-end developer</h3>
-        <p>
-          As an adept developer, I have a well-rounded skill set in programming
-          and honed talents in UX/UI updates and software testing, making me an
-          ideal fit for the Front End Developer position. Further, I am a
-          recognized expert in teamwork and a communicative collaborator. My
-          previous roles have strengthened my capabilities in innovation and
-          motivation, including a keen attention to detail and accuracy. I am
-          excited at the prospect of bringing my talents to you.
-        </p>
-      </div>
-      <div class="w-xl">
+      <div class="welcome-image">
         <MineGeeSvg />
       </div>
     </div>
+    <div class="welcome-button">
+      <a href="#main-projects" class="btn-explore"><span class="btn-explore-ball"></span></a>
+    </div>
+  </section>
+  <div id="main-projects">
+    <MainProjects />
   </div>
+  <AboutMe />
   <Skills />
   <ContactMe />
 </template>
@@ -60,12 +53,24 @@ import Icon from '@/components/global/Icon.vue';
 <style lang="scss" scoped>
 .welcome {
   position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
   width: 100%;
   height: 100vh;
   padding: 100px;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
+
+  &-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  &-info {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+  }
 
   &-message {
     display: flex;
@@ -82,51 +87,48 @@ import Icon from '@/components/global/Icon.vue';
     font-weight: 700;
   }
 
-  &-name{
+  &-name {
     font-size: $fs-xl;
   }
 
-  &-image{
-  
+  &-image {
+    height: 347px;
+  }
+
+  &-icons {
+    display: flex;
+    max-width: 140px;
+  }
+
+  &-button {
+    display: flex;
+    justify-content: center;
+    margin-top: 100px;
   }
 }
 
 
 
-#btn {
-  text-decoration: none;
-  display: inline-block;
-  padding: 8px 30px;
-  border-style: none;
-  border-radius: 40px;
-  background: #fff;
-  color: #2b1055;
-  font-size: 1.5em;
-  z-index: 9;
-  transform: translateY(100px);
-}
-
-.sec {
+.btn-explore {
   position: relative;
-  padding: 100px;
-  // background: #1c0522;
-  max-height: 580px;
+  display: inline-block;
+  text-decoration: none;
+  border-radius: 40px;
+  width: 45px;
+  height: 77px;
+  border: 1px solid $yellow-sea-600;
+  background: transparent;
 
-  h2 {
-    font-size: 3.5em;
-    margin-bottom: 10px;
-    color: #fff;
-  }
-
-  h3 {
-    font-size: 2.5em;
-    margin-bottom: 10px;
-    color: #fff;
-  }
-
-  p {
-    font-size: 1.2em;
-    color: #fff;
+  &-ball {
+    position: absolute;
+    top: 30%;
+    left: 50%;
+    transform: translate(-30%, -50%);
+    border-radius: 50%;
+    background: linear-gradient(108deg, #FC4A1A -36.03%, #F7B733 128.44%);
+    width: 12.95px;
+    height: 12.95px;
+    animation: bounce 1s infinite alternate;
   }
 }
 

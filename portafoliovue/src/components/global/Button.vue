@@ -15,13 +15,17 @@ defineProps({
         type: Boolean,
         default: false,
     },
+    size: {
+        type: String,
+        default: ''
+    }
 })
 
 const handleClick = () => emit('action')
 
 </script>
 <template >
-    <button id="button" :class="`${buttonType} ${disabled ? 'disabled' : ''}`" :disabled="disabled" @click="handleClick">{{ text }}</button>
+    <button id="button" :class="`${buttonType} ${size} ${disabled ? 'disabled' : ''}`" :disabled="disabled" @click="handleClick">{{ text }}</button>
 </template>
 <style lang="scss" scoped>
 #button {
@@ -35,10 +39,11 @@ const handleClick = () => emit('action')
   border-radius: 40px;
   display: inline-block;
     &.primary {
-        background-color: $jagger-50;
-        color: $jagger-950;
+        background-color: $yellow-sea-600;
+        color: $white;
         &:hover {
-            background-color: $revolver-900;
+            background-color: $white;
+            color: $yellow-sea-600;
         }
     }
     &.disabled {
