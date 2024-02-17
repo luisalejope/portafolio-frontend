@@ -91,4 +91,12 @@ header {
         color: #2b1055;
     }
 }
+
+@include MQ(M){
+    header{
+        .navContainer {
+            display: none;
+        }  
+    }
+}
 </style>

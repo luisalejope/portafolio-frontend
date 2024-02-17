@@ -1,13 +1,16 @@
 <script setup>
 defineProps({
-    
+    color: {
+        type: String,
+        default: true,
+    }
 })
 </script>
 <template>
     <div class="ag-courses_item">
       <a href="#" class="ag-courses-item_link">
-        <div class="ag-courses-item_bg"></div>
-
+        <div class="ag-courses-item_bg" :style="`background-color:${color};`"></div>
+        <slot></slot>
         <div class="ag-courses-item_title">
           UI/Web&amp;Graph design for teenagers 11-17&#160;years old
         </div>
@@ -95,21 +98,6 @@ defineProps({
   -webkit-transition: all .5s ease;
   -o-transition: all .5s ease;
   transition: all .5s ease;
-}
-.ag-courses_item:nth-child(2n) .ag-courses-item_bg {
-  background-color: #3ecd5e;
-}
-.ag-courses_item:nth-child(3n) .ag-courses-item_bg {
-  background-color: #e44002;
-}
-.ag-courses_item:nth-child(4n) .ag-courses-item_bg {
-  background-color: #952aff;
-}
-.ag-courses_item:nth-child(5n) .ag-courses-item_bg {
-  background-color: #cd3e94;
-}
-.ag-courses_item:nth-child(6n) .ag-courses-item_bg {
-  background-color: #4c49ea;
 }
 
 

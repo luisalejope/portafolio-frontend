@@ -1,11 +1,12 @@
 <script setup>
 import VueSvg from '@/components/svg/VueSvg.vue';
-import ReactSvg from '@/components/svg/ReactSvg.vue';
+import ReactSvg from './svg/ReactSvg.vue';
 import JsSvg from '@/components/svg/JsSvg.vue';
 import HtmlSvg from '@/components/svg/HtmlSvg.vue';
 import FigmaSvg from '@/components/svg/FigmaSvg.vue';
 import CssSvg from '@/components/svg/CssSvg.vue';
 import BootstrapSvg from '@/components/svg/BootstrapSvg.vue';
+import AngularSvg from '@/components/svg/AngularSvg.vue';
 import GithubSvg from '@/components/svg/GithubSvg.vue';
 import Icon from '@/components/global/Icon.vue';
 import InfoCard from '@/components/global/InfoCard.vue';
@@ -25,7 +26,62 @@ const skills = {
         'I\'ve used Github since my degree, with repositories for university, work, and hobby projects. I\'ve also used Bitbucket and Gitlab. Explore my Github to see more.'
 }
 
-
+const skills2 = [
+    {
+        id: 'vue',
+        svg: VueSvg,
+        desc: '',
+        color: '#41b883',
+    },
+    {
+        id: 'react',
+        svg: ReactSvg,
+        desc: '',
+        color: '#00d8ff'
+    },
+    {
+        id: 'angular',
+        svg: AngularSvg,
+        desc: '',
+        color: '#b52e31'
+    },
+    {
+        id: 'js',
+        svg: JsSvg,
+        desc: '',
+        color: '#ffd600'
+    },
+    {
+        id: 'html',
+        svg: HtmlSvg,
+        desc: '',
+        color: '#e44d26'
+    },
+    {
+        id: 'css',
+        svg: CssSvg,
+        desc: '',
+        color: '#0277bd'
+    },
+    {
+        id: 'github',
+        svg: GithubSvg,
+        desc: '',
+        color: '#6e40c9'
+    },
+    {
+        id: 'figma',
+        svg: FigmaSvg,
+        desc: '',
+        color: '#0acf83'
+    },
+    {
+        id: 'bootstrap',
+        svg: BootstrapSvg,
+        desc: '',
+        color: '#673ab7'
+    },
+]
 
 </script>
 
@@ -33,66 +89,12 @@ const skills = {
 <template>
     <div id="skills">
         <h2>My skills</h2>
-        <div class='skills-container'>
-            <div class="skill">
-                <Icon size='icon-xxl'>
-                    <VueSvg />
+        <div class="skills-container">
+            <InfoCard v-for="{id, svg, desc, color} of skills2" :key="id" :color="color">
+                <Icon size='icon-s'>
+                    <component :is="svg"></component>
                 </Icon>
-                <p>
-                {{skills.VueSvg}}
-                </p>
-            </div>
-            <div class="skill">
-                <Icon size='icon-xxl'>
-                    <ReactSvg />
-                </Icon>
-                <p>
-                {{skills.ReactSvg}}
-                </p>
-            </div>
-            <div class="skill">
-                <Icon size='icon-xxl'>
-                    <JsSvg />
-                </Icon>
-                <p>
-                {{skills.JsSvg}}
-                </p>
-            </div>
-            <div class="skill">
-                <Icon size='icon-xxl'>
-                    <HtmlSvg />
-                </Icon>
-                <p>
-                {{skills.HtmlSvg}}
-                </p>
-            </div>
-            <div class="skill">
-                <Icon size='icon-xxl'>
-                    <CssSvg />
-                </Icon>
-                <p>
-                {{skills.CssSvg}}
-                </p>
-            </div>
-            <div class="skill">
-                <Icon size='icon-xxl'>
-                    <GithubSvg />
-                </Icon>
-                <p>
-                {{skills.GithubSvg}}
-                </p>
-            </div>
-        </div>
-        <div class="ag-format-container">
-            <div class="ag-courses_box">
-                <InfoCard />
-                <InfoCard />
-                <InfoCard />
-                <InfoCard />
-                <InfoCard />
-                <InfoCard />
-                <InfoCard />
-            </div>
+            </InfoCard>
         </div>
   </div>
 </template>
@@ -108,12 +110,6 @@ const skills = {
         margin-bottom: 20px;
         color: #fff;
     }
-
-    .skills-container{
-        display: grid;
-        grid-template-columns: 1fr 1fr 1fr;
-        gap: 30px;
-    }
     
     .skill {
         font-size: 1.2em;
@@ -125,7 +121,7 @@ const skills = {
         }
     }
 
-    .ag-courses_box {
+    .skills-container {
         display: -webkit-box;
         display: -ms-flexbox;
         display: flex;
@@ -136,6 +132,12 @@ const skills = {
         flex-wrap: wrap;
 
         padding: 50px 0;
+    }
+}
+
+@include MQ(M) {
+    #skills {
+        padding: 0 50px;
     }
 }
 </style>

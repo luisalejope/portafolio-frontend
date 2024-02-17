@@ -47,7 +47,7 @@ import MainProjects from '@/components/MainProjects.vue';
   </div>
   <AboutMe />
   <Skills />
-  <ContactMe />
+  <!-- <ContactMe /> -->
 </template>
 
 <style lang="scss" scoped>
@@ -135,5 +135,15 @@ import MainProjects from '@/components/MainProjects.vue';
 .profile {
   display: flex;
   justify-content: space-between;
+}
+
+@include MQ(L){
+  .welcome {
+    padding: 50px;
+    height: min-content;
+    &-image {
+      display: none;
+    }
+  }
 }
 </style>
