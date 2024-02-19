@@ -38,7 +38,7 @@
         font-size: $fs-m;
 
         span {
-            color: $yellow-sea-500;
+            color: $yellow-sea-600;
         }
 
         &__mobile{
@@ -61,7 +61,7 @@
                 font-size: $fs-s;
 
                 span {
-                    color: $yellow-sea-500;
+                    color: $yellow-sea-600;
                 }
             } 
         }
