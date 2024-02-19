@@ -1,7 +1,7 @@
 <script setup>
 import ImageTextCard from './global/ImageTextCard.vue';
 import Button from '@/components/global/Button.vue';
-import MainProjects from '@/components/MainProjects.vue';
+import mainprojects from '@/components/mainprojects.vue';
 const cards = [
     {
         name: 'larrainvial',
@@ -40,23 +40,23 @@ const cards = [
 
 </script>
 <template>
-    <div class="mainProjects">
-        <h2>
+    <div class="mainprojects">
+        <h2 class="mainprojects-title">
             Main Projects
         </h2>
-        <ul class="mainProjects-cards">
+        <ul class="mainprojects-cards">
             <ImageTextCard v-for="card in cards" :key="card.name" :image="card.image" :info="card.info" />
         </ul>
-        <div class="mainProjects-btn">
-            <Button text="See more" buttonType="primary"/>
+        <div class="mainprojects-btn">
+            <Button text="See more" buttonType="link"/>
         </div>
     </div>
 </template>
 
 <style lang="scss">
-.mainProjects {
+.mainprojects {
     padding-top: 40px;
-    h2{
+    &-title {
         font-size: $fs-l;
         text-align: center;
     }
@@ -73,8 +73,8 @@ const cards = [
         display: flex;
         justify-content: center;
 
-        Button {
-            max-width: 300px;
+        :first-child {
+            max-width: 130px;
         }
     }
 }

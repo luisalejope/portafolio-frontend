@@ -134,7 +134,7 @@ defineProps({
 .card__description {
     padding: 0 2em 2em;
     margin: 0;
-    color: #D7BDCA;
+    color: $bunker-950;
     display: -webkit-box;
     -webkit-box-orient: vertical;
     -webkit-line-clamp: 3;

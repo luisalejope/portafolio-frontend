@@ -1,7 +1,8 @@
 <script setup>
 
 import { RouterLink, useRoute, useRouter } from 'vue-router'
-
+import LogoSvg from '@/components/svg/LogoSvg.vue';
+import Icon from '@/components/global/Icon.vue'
 const route = useRoute();
 const router = useRouter();
 
@@ -18,7 +19,9 @@ const router = useRouter();
   </header> -->
     <header>
         <RouterLink class="linkNav logo" to="/home" >
-            Logo
+            <Icon size='icon-l'>
+                <LogoSvg />
+            </Icon>
         </RouterLink>
         <nav class="navContainer">
             
@@ -48,9 +51,7 @@ const router = useRouter();
 
 <style lang="scss" scoped>
 header {
-    position: absolute;
-    top: 0;
-    left: 0%;
+    position: relative;
     width: 100%;
     padding: 30px 100px;
     display: flex;

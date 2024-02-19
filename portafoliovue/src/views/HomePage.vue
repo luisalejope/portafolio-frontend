@@ -26,12 +26,14 @@ import MainProjects from '@/components/MainProjects.vue';
         <h2 class="welcome-name">Luis Peña</h2>
         <h1 class="welcome-roles">FRONTEND DEVELOPER | UX/UI ANALYST | COMPUTER ENGINEER</h1>
         <div class="welcome-icons">
-          <Icon size='icon-l'>
-            <LinkedinSvg />
-          </Icon>
-          <Icon size='icon-l'>
-            <GithubLittleSvg />
-          </Icon>
+          <div class="welcome-icons__container">
+            <Icon size='icon-l'>
+              <LinkedinSvg />
+            </Icon>
+            <Icon size='icon-l'>
+              <GithubLittleSvg />
+            </Icon>
+          </div>
         </div>
       </div>
       <div class="welcome-image">
@@ -57,8 +59,8 @@ import MainProjects from '@/components/MainProjects.vue';
   flex-direction: column;
   justify-content: center;
   width: 100%;
-  height: 100vh;
-  padding: 100px;
+  height: 90vh;
+  padding: 5vh 100px 100px;
 
   &-container {
     display: flex;
@@ -88,7 +90,11 @@ import MainProjects from '@/components/MainProjects.vue';
   }
 
   &-name {
-    font-size: $fs-xl;
+    font-size: $fs-xxl;
+  }
+
+  &-roles {
+     font-size: $fs-m; 
   }
 
   &-image {
@@ -97,13 +103,18 @@ import MainProjects from '@/components/MainProjects.vue';
 
   &-icons {
     display: flex;
-    max-width: 140px;
+    justify-content: flex-start;
+    &__container{
+      display: flex;
+      max-width: 140px;
+    }
+    
   }
 
   &-button {
     display: flex;
     justify-content: center;
-    margin-top: 100px;
+    margin-top: 5vh;
   }
 }
 
@@ -139,10 +150,27 @@ import MainProjects from '@/components/MainProjects.vue';
 
 @include MQ(L){
   .welcome {
-    padding: 50px;
+    padding: 5vh 50px 50px;
     height: min-content;
     &-image {
       display: none;
+    }
+  }
+}
+
+@include MQ(M){
+  .welcome {
+    &-info{
+      gap: 30px;
+    }
+    &-icons {
+      justify-content: center;
+    }
+    &-name {
+      font-size: $fs-l;
+    }
+    &-roles {
+      font-size: $fs-s;
     }
   }
 }

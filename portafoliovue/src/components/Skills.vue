@@ -87,8 +87,8 @@ const skills2 = [
 
 
 <template>
-    <div id="skills">
-        <h2>My skills</h2>
+    <div class="skills">
+        <h2 class="skills-title">My skills</h2>
         <div class="skills-container">
             <InfoCard v-for="{id, svg, desc, color} of skills2" :key="id" :color="color">
                 <Icon size='icon-s'>
@@ -100,28 +100,20 @@ const skills2 = [
 </template>
 
 <style lang="scss" scoped>
-#skills {
+.skills {
     position: relative;
-    padding: 0 150px;
-    // background: $revolver-950;
+    margin: 4rem 5vw;
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
 
-    h2 {
-        font-size: 3.5em;
-        margin-bottom: 20px;
+    &-title {
+        font-size: $fs-l;
+        text-align: center;
         color: #fff;
     }
-    
-    .skill {
-        font-size: 1.2em;
-        color: #fff;
-    
-        p {
-            margin: 10px 0;
-            text-align: justify;
-        }
-    }
 
-    .skills-container {
+    &-container {
         display: -webkit-box;
         display: -ms-flexbox;
         display: flex;
@@ -130,14 +122,12 @@ const skills2 = [
         align-items: flex-start;
         -ms-flex-wrap: wrap;
         flex-wrap: wrap;
-
-        padding: 50px 0;
     }
 }
 
 @include MQ(M) {
-    #skills {
-        padding: 0 50px;
+    .skills {
+        
     }
 }
 </style>

@@ -60,11 +60,27 @@ const handleClick = () => emit('action')
     }
     
     &.link {
-        background-color: white;
-        color: rgb(0, 75, 173);
+        background-color: transparent;
+        color: $yellow-sea-600;
+        position: relative;
+        font-weight: 600;
+
+        &:after {
+            content: '';
+            position: absolute;
+            left: 50%;
+            bottom: 0;
+            width: 0;
+            height: 2px;
+            background-color: $yellow-sea-600;
+            transition: width 0.3s ease-in-out, left 0.3s ease-in-out;
+        }
+
         &:hover {
-            color: rgb(0, 103, 238);
-            text-decoration: underline;
+            &:after {
+            width: 100%;
+            left: 0;
+            }
         }
     }
 }
