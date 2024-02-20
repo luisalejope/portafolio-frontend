@@ -5,6 +5,7 @@ import { useLoaderStore } from '@/stores/loader';
 import { useUserStore } from '@/stores/user';
 import Loader from '@/components/global/Loader.vue';
 import Nav from '@/components/Nav.vue'
+import Footer from '@/components/Footer.vue';
 import { onBeforeMount, ref, computed } from 'vue';
 // ROUTER
 const router = useRouter();
@@ -25,6 +26,7 @@ const { getLoaderStatus } = storeToRefs(loadStore);
     <RouterView />
     <Loader v-show="getLoaderStatus" />
   </div>
+  <Footer />
 </template>
 
 <style lang="scss" scoped>

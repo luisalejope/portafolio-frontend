@@ -163,6 +163,10 @@ import MainProjects from '@/components/MainProjects.vue';
     &-info{
       gap: 30px;
     }
+    &-container{
+      display: block;
+      width: 100%;
+    }
     &-icons {
       justify-content: center;
     }
