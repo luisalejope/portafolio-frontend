@@ -1,7 +1,7 @@
 <script setup>
 import ImageTextCard from './global/ImageTextCard.vue';
 import Button from '@/components/global/Button.vue';
-import mainprojects from '@/components/mainprojects.vue';
+
 const cards = [
     {
         name: 'larrainvial',

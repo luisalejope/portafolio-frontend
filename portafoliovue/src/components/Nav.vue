@@ -50,17 +50,17 @@ const mobileNavHandler = () => {
 
         <nav class="mobileNavContainer" v-show="mobileNav">
             
-            <div class="router-link">
+            <div class="router-link" @click="mobileNavHandler">
                 <RouterLink class="linkNav" to="/home" exactActiveClass="active">
                     Home
                 </RouterLink>
             </div>
-            <div class="router-link">
+            <div class="router-link" @click="mobileNavHandler">
                 <RouterLink class="linkNav" to="/work" exactActiveClass="active">
                     Work
                 </RouterLink>
             </div>
-            <div class="router-link">
+            <div class="router-link" @click="mobileNavHandler">
                 <RouterLink class="linkNav" to="/contact" exactActiveClass="active">
                     Contact
                 </RouterLink>
