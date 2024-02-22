@@ -40,7 +40,7 @@ const cards = [
     {
         name: 'pregis',
         image: {
-            src: 'https://github.com/luisalejope/Images/blob/main/portafolio/liquidezya.png?raw=true',
+            src: 'https://github.com/luisalejope/Images/blob/main/portafolio/pregis.png?raw=true',
             alt: 'Pregis website'
         },
         info: {
@@ -51,7 +51,7 @@ const cards = [
     {
         name: 'fundacion de la mujer',
         image: {
-            src: 'https://github.com/luisalejope/Images/blob/main/portafolio/liquidezya.png?raw=true',
+            src: 'https://github.com/luisalejope/Images/blob/main/portafolio/fdlm.png?raw=true',
             alt: 'Fundacion de la mujer website'
         },
         info: {
@@ -62,7 +62,7 @@ const cards = [
     {
         name: 'parque arauco',
         image: {
-            src: 'https://github.com/luisalejope/Images/blob/main/portafolio/liquidezya.png?raw=true',
+            src: 'https://github.com/luisalejope/Images/blob/main/portafolio/parquearauco.png?raw=true',
             alt: 'Parque Arauco website'
         },
         info: {
@@ -73,7 +73,7 @@ const cards = [
     {
         name: 'consorcio',
         image: {
-            src: 'https://github.com/luisalejope/Images/blob/main/portafolio/liquidezya.png?raw=true',
+            src: 'https://github.com/luisalejope/Images/blob/main/portafolio/consorcio.png?raw=true',
             alt: 'consorcio website'
         },
         info: {
@@ -84,7 +84,7 @@ const cards = [
     {
         name: 'lemon',
         image: {
-            src: 'https://github.com/luisalejope/Images/blob/main/portafolio/liquidezya.png?raw=true',
+            src: 'https://github.com/luisalejope/Images/blob/main/portafolio/lemon.png?raw=true',
             alt: 'lemon website'
         },
         info: {
@@ -95,7 +95,7 @@ const cards = [
     {
         name: 'onboarding',
         image: {
-            src: 'https://github.com/luisalejope/Images/blob/main/portafolio/liquidezya.png?raw=true',
+            src: 'https://github.com/luisalejope/Images/blob/main/portafolio/onboarding.png?raw=true',
             alt: 'Onboarding website'
         },
         info: {
